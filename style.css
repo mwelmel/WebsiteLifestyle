@@ -1,64 +1,227 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
 .navbar {
-    background-color: #1a1a1a; /* Dark background */
+    background-color: #608BC1;
 }
-/* Adjust brand and link color */
-.navbar-brand, .nav-link {
-    color: #d3d3d3 !important; /* Light color for text */
+.navbar-brand {
+    color: #BFECFF;
+    font-weight: bold;
 }
-/* Customize the Subscribe button */
+.navbar-brand:hover {
+    color: #BFECFF;
+}
+.nav-link {
+    color: #ddd;
+    margin-left: 15px;
+}
+.nav-link:hover {
+    color: #BFECFF;
+}
 .btn-subscribe {
-    background-color: #00aaff;
-    color: #fff;
+    background-color: #BFECFF;
+    color: #133E87;
 }
 .btn-subscribe:hover {
-    background-color: #0088cc;
-    color: #fff;
+    background-color: #8bb1c1;
 }
 
-/* Carousel container styling */
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #CBDCEB;
+}
+.welcome-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+.welcome-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Carousel Section */
 #LifestyleCarousel {
     max-width: 100%;
-    max-height: 700px; /* Set the maximum height for the carousel */
-    margin: auto;
-    overflow: hidden; /* Hide any overflow to keep it clean */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    max-height: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* Adjust carousel images */
 #LifestyleCarousel .carousel-item img {
-    object-fit: cover; /* Keeps image aspect ratio and centers it */
-    height: 700px; /* Set the image height to match the carousel height */
-    width: 50%; /* Image should take full width of the carousel */
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
     border-radius: 10px;
 }
-
-/* Indicators styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
 .carousel-indicators button {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.6);
     border: none;
-    transition: background-color 0.3s;
 }
 .carousel-indicators .active {
-    background-color: #00aaff; /* Active indicator color */
+    background-color: #00aaff;
 }
 
-/* Previous and Next button styling */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
-    border-radius: 50%;
-    padding: 10px; /* Increases icon size */
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #CBDCEB;
 }
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 0.8; /* Makes controls slightly transparent */
-    transition: opacity 0.3s;
+.about-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #333;
 }
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 1; /* Makes controls fully opaque on hover */
+
+/* Tutorial Cards */
+.tutorial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tutorial-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tutorial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+.tutorial-title {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Footer Section (if needed) */
+footer {
+    background-color: #2b2b2b;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0077cc;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #CBDCEB;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section .about-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon i {
+    margin-right: 10px;
+}
+
+/* Social Icon Colors */
+.instagram {
+    background-color: #e4405f;
+}
+.email {
+    background-color: #6c757d;
+}
+.youtube {
+    background-color: #ff0000;
+}
+.linkedin {
+    background-color: #0077b5;
+}
+
+/* Hover Effect */
+.social-icon:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Mengatur tombol subscribe */
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #27a9e1;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #1b8bb7;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2rem;
+    }
+    .tutorial-title {
+        font-size: 1rem;
+    }
 }
