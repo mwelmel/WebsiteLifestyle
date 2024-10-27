@@ -1,0 +1,64 @@
+.navbar {
+    background-color: #1a1a1a; /* Dark background */
+}
+/* Adjust brand and link color */
+.navbar-brand, .nav-link {
+    color: #d3d3d3 !important; /* Light color for text */
+}
+/* Customize the Subscribe button */
+.btn-subscribe {
+    background-color: #00aaff;
+    color: #fff;
+}
+.btn-subscribe:hover {
+    background-color: #0088cc;
+    color: #fff;
+}
+
+/* Carousel container styling */
+#LifestyleCarousel {
+    max-width: 100%;
+    max-height: 700px; /* Set the maximum height for the carousel */
+    margin: auto;
+    overflow: hidden; /* Hide any overflow to keep it clean */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+/* Adjust carousel images */
+#LifestyleCarousel .carousel-item img {
+    object-fit: cover; /* Keeps image aspect ratio and centers it */
+    height: 700px; /* Set the image height to match the carousel height */
+    width: 50%; /* Image should take full width of the carousel */
+    border-radius: 10px;
+}
+
+/* Indicators styling */
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    transition: background-color 0.3s;
+}
+.carousel-indicators .active {
+    background-color: #00aaff; /* Active indicator color */
+}
+
+/* Previous and Next button styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    border-radius: 50%;
+    padding: 10px; /* Increases icon size */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.8; /* Makes controls slightly transparent */
+    transition: opacity 0.3s;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1; /* Makes controls fully opaque on hover */
+}
