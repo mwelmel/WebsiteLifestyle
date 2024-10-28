@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navbar Styling */
 .navbar {
     background-color: #608BC1;
@@ -200,20 +204,70 @@ footer a:hover {
 }
 
 /* Mengatur tombol subscribe */
-.subscribe-form button {
-    padding: 10px 20px;
-    background-color: #27a9e1;
-    color: #ffffff;
+.subscribe-container {
+    background: linear-gradient(135deg, #CBDCEB, #CBDCEB);
+    padding: 50px 20px;
+    color: #0a0707;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    max-width: 500px;
+}
+
+.subscribe-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.subscribe-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form input[type="text"]:focus,
+.subscribe-form input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-form button {
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #1b8bb7;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .subscribe-form button:hover {
-    background-color: #1b8bb7;
+    background-color: #27a9e1;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Styling */
